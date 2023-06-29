@@ -1,0 +1,34 @@
+@import './base.less';
+
+body {
+    background-color: @bg;
+    .flexcolumn();
+
+    header {
+        background-color: @pink;
+        .flexcolumn();
+
+        h2 {
+            color: @font;
+        }
+    }
+    main  {
+        .flexcolumn();
+        h2 {
+            background-color: @pink;
+            color: @bg
+        }
+        .imgDiv01 {
+            .flexrow();
+            justify-content: flex-end;
+
+            #basil {
+                border-radius: 40%;
+                border: @font groove 4px;
+            }
+        }
+        p {
+            .p();
+        }
+    }
+}
